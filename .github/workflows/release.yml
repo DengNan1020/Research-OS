@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  release-macos:
+  build-macos:
     runs-on: macos-14
     steps:
       - name: Checkout
@@ -29,20 +29,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and publish macOS DMG
-        uses: tauri-apps/tauri-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tagName: ${{ github.ref_name }}
-          releaseName: Research OS ${{ github.ref_name }}
-          releaseBody: Automatic release for Research OS.
-          releaseDraft: false
-          prerelease: false
-          args: --target aarch64-apple-darwin
+      - name: Build macOS app
+        run: npm run tauri:build -- --ci --target aarch64-apple-darwin
 
-  release-windows:
-    needs: release-macos
+      - name: Upload macOS DMG artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-dmg
+          path: src-tauri/target/release/bundle/dmg/*.dmg
+          if-no-files-found: error
+
+  build-windows:
     runs-on: windows-latest
     steps:
       - name: Checkout
@@ -63,9 +60,9 @@ jobs:
         run: npm ci
 
       - name: Build Windows app
-        run: npx tauri build --ci --target x86_64-pc-windows-msvc --no-bundle
+        run: npm run tauri:build -- --ci --target x86_64-pc-windows-msvc --no-bundle
 
-      - name: Build Windows portable files
+      - name: Package Windows portable zip
         shell: pwsh
         run: |
           $releaseDir = "src-tauri/target/x86_64-pc-windows-msvc/release"
@@ -84,10 +81,40 @@ jobs:
 
           Compress-Archive -Path "$stageDir/*" -DestinationPath "dist/$zipName" -Force
 
-      - name: Upload Windows zip to release
+      - name: Upload Windows ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-zip
+          path: dist/*.zip
+          if-no-files-found: error
+
+  publish-release:
+    needs:
+      - build-macos
+      - build-windows
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download macOS artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: macos-dmg
+          path: release-assets
+
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-zip
+          path: release-assets
+
+      - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: dist/*.zip
-          overwrite_files: true
+          tag_name: ${{ github.ref_name }}
+          name: Research OS ${{ github.ref_name }}
+          body: Automatic release for Research OS.
+          files: release-assets/**/*
+          draft: false
+          prerelease: false
+          fail_on_unmatched_files: true
