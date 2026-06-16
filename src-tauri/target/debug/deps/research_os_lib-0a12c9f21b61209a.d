@@ -1,0 +1,13 @@
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/debug/deps/research_os_lib-0a12c9f21b61209a.d: src/lib.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/5a6c09c9482161f7736693eb38a7ade6c5bf980af86991a43de243d6a37b0d49 /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/6d345c6e47cb2b7e68de5c6c9546396cfb1c1f21642797a1f2ca8c6b66b431df /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/0a78a99c409d0ebf739353515b0a386bd2d4c1dfb5423f7795e903253415cb2d
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/debug/deps/libresearch_os_lib-0a12c9f21b61209a.rmeta: src/lib.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/5a6c09c9482161f7736693eb38a7ade6c5bf980af86991a43de243d6a37b0d49 /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/6d345c6e47cb2b7e68de5c6c9546396cfb1c1f21642797a1f2ca8c6b66b431df /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/0a78a99c409d0ebf739353515b0a386bd2d4c1dfb5423f7795e903253415cb2d
+
+src/lib.rs:
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/5a6c09c9482161f7736693eb38a7ade6c5bf980af86991a43de243d6a37b0d49:
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/6d345c6e47cb2b7e68de5c6c9546396cfb1c1f21642797a1f2ca8c6b66b431df:
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out/0a78a99c409d0ebf739353515b0a386bd2d4c1dfb5423f7795e903253415cb2d:
+
+# env-dep:CARGO_PKG_AUTHORS=
+# env-dep:CARGO_PKG_DESCRIPTION=Research OS desktop app
+# env-dep:CARGO_PKG_NAME=research_os
+# env-dep:OUT_DIR=/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/debug/build/research_os-116430a0a8769dcf/out

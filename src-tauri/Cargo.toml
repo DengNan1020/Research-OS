@@ -1,6 +1,6 @@
 [package]
 name = "research_os"
-version = "0.0.1"
+version = "0.0.2"
 description = "Research OS desktop app"
 edition = "2021"
 
@@ -13,3 +13,11 @@ tauri-build = { version = "2.6.2", features = [] }
 
 [dependencies]
 tauri = { version = "2.11.0", features = [] }
+
+[profile.release]
+strip = "symbols"
+lto = true
+codegen-units = 1
+panic = "abort"
+opt-level = "z"
+incremental = false
