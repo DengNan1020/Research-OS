@@ -32,11 +32,14 @@ jobs:
       - name: Build macOS app
         run: npm run tauri:build -- --ci --target aarch64-apple-darwin
 
+      - name: Inspect macOS bundle
+        run: find src-tauri/target/release/bundle -maxdepth 3 -type f | sort
+
       - name: Upload macOS DMG artifact
         uses: actions/upload-artifact@v4
         with:
           name: macos-dmg
-          path: src-tauri/target/release/bundle/dmg/*.dmg
+          path: src-tauri/target/release/bundle/macos/*.dmg
           if-no-files-found: error
 
   build-windows:
