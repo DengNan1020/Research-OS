@@ -1,0 +1,15 @@
+[package]
+name = "research_os"
+version = "0.0.1"
+description = "Research OS desktop app"
+edition = "2021"
+
+[lib]
+name = "research_os_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.2", features = [] }
+
+[dependencies]
+tauri = { version = "2.11.0", features = [] }

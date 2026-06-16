@@ -1,0 +1,11 @@
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/web_atoms-69e3d3ef4cb83e8a.d: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web_atoms-0.2.4/lib.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/named_entities.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/generated.rs
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/libweb_atoms-69e3d3ef4cb83e8a.rlib: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web_atoms-0.2.4/lib.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/named_entities.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/generated.rs
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/libweb_atoms-69e3d3ef4cb83e8a.rmeta: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web_atoms-0.2.4/lib.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/named_entities.rs /Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/generated.rs
+
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web_atoms-0.2.4/lib.rs:
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/named_entities.rs:
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear\ box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out/generated.rs:
+
+# env-dep:OUT_DIR=/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/build/web_atoms-618abe91f56a9de6/out

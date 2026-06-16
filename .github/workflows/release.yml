@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release-macos:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and publish macOS DMG
+        uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Research OS ${{ github.ref_name }}
+          releaseBody: Automatic release for Research OS.
+          releaseDraft: false
+          prerelease: false
+          args: --target aarch64-apple-darwin
+
+  release-windows:
+    needs: release-macos
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows app
+        run: npx tauri build --ci --target x86_64-pc-windows-msvc --no-bundle
+
+      - name: Build Windows portable files
+        shell: pwsh
+        run: |
+          $releaseDir = "src-tauri/target/x86_64-pc-windows-msvc/release"
+          $stageDir = "src-tauri/target/windows-portable"
+          $zipName = "Research-OS_${env:GITHUB_REF_NAME}_x64_windows.zip"
+
+          New-Item -ItemType Directory -Force -Path $stageDir | Out-Null
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+
+          Copy-Item "$releaseDir/*.exe" $stageDir -Force
+          Copy-Item "$releaseDir/*.dll" $stageDir -Force
+
+          if (Test-Path "$releaseDir/resources") {
+            Copy-Item "$releaseDir/resources" -Destination $stageDir -Recurse -Force
+          }
+
+          Compress-Archive -Path "$stageDir/*" -DestinationPath "dist/$zipName" -Force
+
+      - name: Upload Windows zip to release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: dist/*.zip
+          overwrite_files: true

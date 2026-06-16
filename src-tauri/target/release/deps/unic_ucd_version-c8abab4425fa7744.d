@@ -1,0 +1,14 @@
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/unic_ucd_version-c8abab4425fa7744.d: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/lib.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/pkg_info.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/unicode_version.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/../tables/unicode_version.rsv
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/libunic_ucd_version-c8abab4425fa7744.rlib: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/lib.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/pkg_info.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/unicode_version.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/../tables/unicode_version.rsv
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/libunic_ucd_version-c8abab4425fa7744.rmeta: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/lib.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/pkg_info.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/unicode_version.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/../tables/unicode_version.rsv
+
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/lib.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/pkg_info.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/unicode_version.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unic-ucd-version-0.9.0/src/../tables/unicode_version.rsv:
+
+# env-dep:CARGO_PKG_DESCRIPTION=UNIC — Unicode Character Database — Version
+# env-dep:CARGO_PKG_NAME=unic-ucd-version
+# env-dep:CARGO_PKG_VERSION=0.9.0

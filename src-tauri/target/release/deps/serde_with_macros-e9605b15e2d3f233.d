@@ -1,0 +1,8 @@
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/serde_with_macros-e9605b15e2d3f233.d: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lib.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/apply.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lazy_bool.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/utils.rs
+
+/Users/dengnan/Documents/Codex/2026-06-15/files-mentioned-by-the-user-research/resear box/src-tauri/target/release/deps/libserde_with_macros-e9605b15e2d3f233.dylib: /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lib.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/apply.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lazy_bool.rs /Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/utils.rs
+
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lib.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/apply.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/lazy_bool.rs:
+/Users/dengnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_with_macros-3.21.0/src/utils.rs:
